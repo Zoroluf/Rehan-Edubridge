@@ -1,0 +1,49 @@
+1.Given an array of integers and a target sum, return indices of the two numbers that add up to the target.
+
+step 1 : start
+step 2 : Initialize a hash map to store visited numbers and their indices.
+step 3 : For each number in the array:
+         Calculate the complement (target - current number).
+step 4 : If the complement exists in the map, return the indices.
+         Else, store the number and its index in the map.
+step 5 : stop
+
+2.Implement binary search to find the index of a target element in a sorted array.
+
+step 1 : start
+step 2 : Initialize two pointers: low and high.
+step 3 : Repeat until low > high:
+step 4 : Calculate mid.
+         If arr[mid] == target, return mid.
+         If arr[mid] < target, search right half.
+         Else, search left half.
+step 5 : stop
+
+
+
+3.Write a function to check if two strings are anagrams of each other.
+
+step 1 : start 
+step 2 : Check if both strings have the same length.
+step 3 : Sort both strings and compare them.
+step 4 : stop
+
+
+4.Given a string, find the length of the longest substring without repeating characters.
+
+step 1 : start
+step 2 : Use a sliding window with two pointers.
+step 3 : Track characters in a set.
+step 4 : Move the right pointer and add characters until a repeat.
+step 5 : When repeated, move the left pointer until it's unique again.
+step 6 : Track the max window size.
+step 7 : stop
+
+
+5.Write a code that counts how many palindromic substrings are present in a given string.
+
+step 1 : start
+step 2 : For each character in the string, expand around that character and its neighbor.
+step 3 : Check both odd-length and even-length palindromes.
+step 4 : Expand while the substring is a palindrome and count.
+step 5 : stop
